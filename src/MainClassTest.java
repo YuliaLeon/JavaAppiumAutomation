@@ -14,4 +14,15 @@ public class MainClassTest extends MainClass {
             Assert.fail("a != 14");
         }
     }
+    @Test
+    public void testGetClassNumber()
+    {
+        int b = this.getClassNumber();
+
+        if (b > 45) {
+            System.out.println("Success! b > 45");
+        } else {
+            Assert.fail("Failure! b < 45");
+        }
+    }
 }
